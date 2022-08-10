@@ -1,0 +1,114 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-color: $hero__bg-cl;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero--overlay {
+  max-width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $hero--overlay-bg-cl;
+  background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
+    url('../images/hero/hero-480.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
+        url('../images/hero/hero-960.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+
+    background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
+    url('../images/hero/hero-768.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
+          url('../images/hero/hero-1536.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
+    url('../images/hero/hero-1600.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
+          url('../images/hero/hero-3200.jpg');
+      }
+    }
+  }  
+}
+
+.hero__title {
+  max-width: 360px;
+  margin: 0px auto;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: (42px / 26px);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $hero__title-cl;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+
+    font-size: 44px;
+    line-height: (60px / 44px);
+  }
+}
+
+.hero__btn {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $btn__text-cl;
+
+  background-color: $accent__cl;
+  box-shadow: 0px 4px 4px $hero__btn-dsh-cl;
+  border-radius: 4px;
+  border-width: 0px;
+  transition: background-color $main__transition;
+
+  &:hover,
+  &:focus {
+    background-color: $hero__btn-cl;
+  }
+}

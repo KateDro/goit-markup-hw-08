@@ -1,0 +1,39 @@
+/* логотип */
+.logo {
+  display: block;
+  font-family: $secondary__font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: (28px / 24px);
+
+  transition: color $main__transition;
+
+  &:hover,
+  &:focus,
+  &--accent {
+    color: $accent__cl;
+  }
+}
+
+.page-header__logo {
+  padding: 16px 0;
+
+  color: $logo__dark;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0 25px;
+
+    font-size: 26px;
+    line-height: (31px / 26px);
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+
+  color: $logo__light;
+}
