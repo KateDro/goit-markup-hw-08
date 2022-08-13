@@ -11,8 +11,6 @@
 }
 
 .hero--overlay {
-  max-width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
 
@@ -24,8 +22,8 @@
   background-position: center;
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
         url('../images/hero/hero-960.jpg');
@@ -37,11 +35,11 @@
     height: 400px;
 
     background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
-    url('../images/hero/hero-768.jpg');
+      url('../images/hero/hero-768.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
         background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
           url('../images/hero/hero-1536.jpg');
@@ -54,22 +52,24 @@
     height: 600px;
 
     background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
-    url('../images/hero/hero-1600.jpg');
+      url('../images/hero/hero-1600.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
         background-image: linear-gradient($hero__overlay-cl, $hero__overlay-cl),
           url('../images/hero/hero-3200.jpg');
       }
     }
-  }  
+  }
 }
 
 .hero__title {
   max-width: 360px;
-  margin: 0px auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 900;
   font-size: 26px;
@@ -88,8 +88,11 @@
 }
 
 .hero__btn {
-  display: block;
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
