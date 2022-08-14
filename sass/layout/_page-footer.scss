@@ -20,18 +20,19 @@
     &:not(:last-child) {
       margin-bottom: 60px;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
     &:last-child {
       margin-left: auto;
     }
   }
-
+}
+.page-footer__adress {
   @media screen and (min-width: 1200px) {
-    &--margin {
-      gap: 70px;
-    }
+    margin-right: 70px;
   }
 }
-
 .footer-contacts__item {
   &:not(:last-child) {
     margin-bottom: 8px;

@@ -866,13 +866,16 @@ ul {
   .page-footer__box:not(:last-child) {
     margin-bottom: 60px;
   }
+}
+@media screen and (min-width: 1200px) {
   .page-footer__box:last-child {
     margin-left: auto;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .page-footer__box--margin {
-    gap: 70px;
+  .page-footer__adress {
+    margin-right: 70px;
   }
 }
 
